@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+    padding: 10px;
+  }
+
+  header {
+    font-size: 40px;
+  }
+
+  .todo__write {
+    font-size: 20px;
+  }
+
+  .wrapper__main__list {
+    font-size: 18px;
+  }
+}
+
 body {
   width: 100%;
   height: 100vh;
