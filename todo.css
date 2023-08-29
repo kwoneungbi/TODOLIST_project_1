@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .wrapper {
@@ -21,6 +21,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -31,7 +35,36 @@ body {
 }
 
 .wrapper {
-  width: 70%;
+  max-width: 700px; /* Change this value as needed */
+  width: 90%; /* For small screens */
+
+  /*...rest of your css...*/
+
+  @media screen and (min-width: 600px) {
+    /* Adjust breakpoint as needed */
+    .wrapper {
+      width: 70%;
+    }
+    header {
+      font-size: 60px;
+    }
+    .todo__write {
+      font-size: 25px;
+    }
+  }
+}
+
+/* body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.wrapper {
+  /* width: 70%; */
   background-color: hwb(180 82% 7%);
   padding: 20px 30px;
   border: 3px solid black;
@@ -39,7 +72,7 @@ body {
 }
 
 header {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
   text-align: center;
 }
