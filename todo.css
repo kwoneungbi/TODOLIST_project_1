@@ -1,26 +1,3 @@
-/* * {
-  box-sizing: border-box;
-} */
-
-@media screen and (max-width: 600px) {
-  .wrapper {
-    width: 90%;
-    padding: 10px;
-  }
-
-  header {
-    font-size: 40px;
-  }
-
-  .todo__write {
-    font-size: 20px;
-  }
-
-  .wrapper__main__list {
-    font-size: 18px;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -35,13 +12,10 @@ body {
 }
 
 .wrapper {
-  max-width: 700px; /* Change this value as needed */
-  width: 90%; /* For small screens */
-
-  /*...rest of your css...*/
+  max-width: 700px;
+  width: 90%;
 
   @media screen and (min-width: 600px) {
-    /* Adjust breakpoint as needed */
     .wrapper {
       width: 70%;
     }
@@ -84,9 +58,19 @@ main {
   align-items: center;
 }
 
+.todo__write,
+.main__list {
+  width: 100%;
+}
+
 .wrapper__main {
   display: flex;
   flex-direction: column;
+}
+
+.todo-form,
+.wrapper__main__list {
+  width: 100%;
 }
 
 .todo-form {
